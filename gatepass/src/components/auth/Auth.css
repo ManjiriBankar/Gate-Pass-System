@@ -1,0 +1,444 @@
+/* Auth.css */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.auth-container, .register-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.8)), 
+              url('/college-building.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.college-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 10;
+}
+
+.college-logo-Auth {
+  height: 120px; /* Force the height */
+  max-height: 150px !important;
+  width: auto !important;
+  object-fit: contain !important;
+  margin-right: 20px;
+}
+
+.college-info {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.college-info h2 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.college-info h1 {
+  margin: 5px 0;
+  font-size: 22px;
+  font-weight: bold;
+  color: #004080;
+}
+
+.college-info p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.university-affiliation {
+  font-weight: bold;
+}
+
+.register-affiliation {
+  font-weight: bold;
+}
+
+.college-accreditation {
+  display: flex;
+  align-items: center;
+}
+
+.accreditation-logo {
+  height: 80px;
+  margin-right: 10px;
+}
+
+.auth-content, .register-content {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  position: relative;
+}
+
+.auth-form-container {
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  width: 400px;
+  backdrop-filter: blur(5px);
+  position: relative;
+  z-index: 2;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.register-form-container {
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+  padding: 40px;
+  width: 600px;
+  max-width: 90%;
+  backdrop-filter: blur(5px);
+  position: relative;
+  z-index: 2;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.gate-pass-title {
+  text-align: center;
+  color: #004080;
+  margin-bottom: 15px;
+  font-size: 24px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.gate-pass-title::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -8px;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background-color: #004080;
+}
+
+.register-form-container h2 {
+  text-align: center;
+  color: #004080;
+  margin-bottom: 30px;
+  font-size: 30px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.register-form-container h2::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -12px;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background-color: #004080;
+}
+
+.sign-in-container h3 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.auth-error {
+  background-color: rgba(255, 221, 221, 0.9);
+  color: #f44336;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  text-align: center;
+  border-left: 4px solid #f44336;
+}
+
+.google-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 10px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.google-btn:hover {
+  background-color: #f5f5f5;
+}
+
+.google-icon {
+  height: 20px;
+  margin-right: 10px;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+  color: #999;
+}
+
+.divider span {
+  padding: 0 10px;
+  background-color: white;
+}
+
+.divider::before, .divider::after {
+  content: '';
+  flex-grow: 1;
+  height: 1px;
+  background-color: #ccc;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-row {
+  display: flex;
+  gap: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+  font-weight: 600;
+}
+
+.form-group input, .form-group select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.8);
+  transition: all 0.3s;
+}
+
+.form-group input:focus, .form-group select:focus {
+  border-color: #004080;
+  box-shadow: 0 0 0 2px rgba(0, 64, 128, 0.2);
+  outline: none;
+  background-color: white;
+}
+
+/* Form validation styles */
+.input-error {
+  border-color: #c62828 !important;
+  background-color: rgba(255, 235, 238, 0.5) !important;
+}
+
+.error-message {
+  color: #f44336;
+  font-size: 12px;
+  margin-top: 4px;
+  margin-left: 2px;
+}
+
+.info-message {
+  color: #2196F3;
+  font-size: 12px;
+  margin-top: 4px;
+  margin-left: 2px;
+  font-style: italic;
+}
+
+.helper-text {
+  font-size: 12px;
+  color: #666;
+  margin-top: 4px;
+  margin-left: 2px;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.sign-in-btn, .register-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #004080;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-weight: bold;
+  font-size: 16px;
+  position: relative;
+  overflow: hidden;
+}
+
+.sign-in-btn::before, .register-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: 0.5s;
+}
+
+.sign-in-btn:hover::before, .register-btn:hover::before {
+  left: 100%;
+}
+
+.sign-in-btn:hover, .register-btn:hover {
+  background-color: #002060;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.sign-in-btn:disabled, .register-btn:disabled {
+  background-color: #7a9cbf;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.register-link, .login-link {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 15px;
+}
+
+.register-link a, .login-link a {
+  color: #004080;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s;
+  padding: 2px 4px;
+  border-radius: 4px;
+  position: relative;
+}
+
+.register-link a::after, .login-link a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #004080;
+  transition: width 0.3s ease;
+}
+
+.register-link a:hover::after, .login-link a:hover::after {
+  width: 100%;
+}
+
+.college-building {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .auth-content, .register-content {
+    gap: 50px;
+  }
+
+  .college-building {
+    display: block;
+    max-width: 27.5%;
+    position: relative;
+    z-index: 2;
+  }
+
+  .college-building img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    transition: all 0.5s;
+  }
+  
+  .college-building img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  }
+}
+
+@media (max-width: 767px) {
+  .college-header {
+    flex-direction: column;
+    text-align: center;
+    padding: 15px 10px;
+  }
+  
+  .college-logo-Auth {
+    margin-right: 0;
+    margin-bottom: 10px;
+    height: 80px;
+  }
+  
+  .college-info h1 {
+    font-size: 18px;
+  }
+  
+  .college-info h2, .college-info p {
+    font-size: 12px;
+  }
+  
+  .accreditation-logo {
+    height: 60px;
+    margin-top: 10px;
+  }
+  
+  .form-row {
+    flex-direction: column;
+    gap: 5px;
+  }
+}
+
+.ig-link {
+  color: #222;
+  font-weight: 600;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 0;
+  font-size: 1rem;
+  outline: none;
+  transition: color 0.2s;
+  -webkit-tap-highlight-color: transparent;
+}
+.ig-link:hover, .ig-link:focus {
+  color: #8e8e8e;
+  font-weight: 600;
+  text-decoration: none;
+  background: none;
+}
+.ig-link:focus, .ig-link:focus-visible, .ig-link:active, .ig-link:visited, .ig-link:target {
+  color: #222;
+  outline: none !important;
+  box-shadow: none !important;
+  border: none !important;
+  background: none !important;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+}

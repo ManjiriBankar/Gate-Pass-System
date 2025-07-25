@@ -1,0 +1,185 @@
+.about-container {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff;
+  color: #1e3a8a;
+  min-height: 100vh;
+}
+
+/* College Header (from Login page)
+.college-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #eff6ff;
+  padding: 20px 40px;
+  border-bottom: 3px solid #1e3a8a;
+}
+
+.college-logo-Auth {
+  height: 100px;
+}
+
+.college-info {
+  flex: 1;
+  text-align: center;
+}
+
+.college-info h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.college-info h2 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.university-affiliation {
+  font-size: 0.9rem;
+  color: #374151;
+}
+
+.college-accreditation img {
+  height: 80px;
+} */
+
+/* About Content Styling */
+.about-content {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.main-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto 40px auto;
+}
+
+.vision-mission-with-image {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto 50px auto;
+  padding: 20px;
+}
+
+.vision-mission-text {
+  flex: 1 1 55%;
+  text-align: left;
+}
+
+.vision-mission-text h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #1e3a8a;
+}
+
+.vision-mission-text p {
+  margin-bottom: 1.5rem;
+  color: #1e40af;
+  line-height: 1.6;
+}
+
+.vision-mission-image {
+  flex: 1 1 40%;
+  text-align: center;
+}
+
+.vision-mission-image img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+}
+
+
+/* Team Section */
+.team-section {
+  margin-top: 40px;
+}
+
+.team-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.team-grid {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #dbeafe;
+  padding: 20px;
+  border-radius: 12px;
+  width: 200px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 12px;
+}
+
+.card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 6px;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: #374151;
+}
+
+/* Guide Section */
+.guide-section {
+  margin-top: 60px;
+}
+
+.guide-card {
+  margin: 0 auto;
+  background-color: #bfdbfe;
+  width: 260px;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.guide-card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.guide-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 6px;
+}
+
+.guide-card p {
+  font-size: 0.95rem;
+  color: #374151;
+}

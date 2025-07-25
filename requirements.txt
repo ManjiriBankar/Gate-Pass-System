@@ -1,0 +1,24 @@
+# KBT College Gate Pass System Requirements
+# This file contains all the dependencies needed to run the project
+
+# Backend Dependencies
+bcryptjs==3.0.2
+cors==2.8.5
+dotenv==16.4.7
+express==4.21.2
+jsonwebtoken==9.0.2
+mongoose==8.13.1
+nodemailer==6.10.0
+
+# Frontend Dependencies
+# Note: These are installed using npm/yarn, not pip
+# Frontend uses:
+# - axios: 1.6.7
+# - react: 18.2.0
+# - react-dom: 18.2.0
+# - react-router-dom: 6.22.1
+# - react-toastify: 11.0.5
+
+# Development Dependencies for Frontend
+# - vite: 5.1.0
+# - eslint and related plugins 
